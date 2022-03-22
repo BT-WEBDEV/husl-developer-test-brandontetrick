@@ -1,0 +1,267 @@
+/* ============ NAVBAR MOBILE ============ */
+
+@media (max-width: 991px) {
+  .mask {
+    height: 60px;
+    background: url(Image.png),
+      linear-gradient(134.46deg, #4279db 0%, #82afff 99.07%);
+    background-blend-mode: multiply, normal;
+    box-shadow: 0px 0px 20px rgba(15, 26, 79, 0.3);
+    padding: 0px 5px 0px 15px;
+    margin: 0px;
+  }
+
+  .navContainer {
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-around;
+  }
+
+  .searchandtoggleContainer {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+  }
+
+  #searchIcon {
+    border: 2px solid transparent;
+    border-color: rgba(255, 255, 255, 0);
+  }
+
+  .searchMobile {
+    margin-left: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 0px;
+  }
+
+  .searchBorderToggle {
+    border-top: solid 2px !important;
+    border-color: white !important;
+  }
+
+  #toggleButton {
+    border-top: 0;
+  }
+
+  .navbar-collapse {
+    padding-top: 60px;
+  }
+
+  /** NAVBAR TOGGLER ANIMATE TO X **/
+
+  /* Remove border from toggler */
+  .navbar-toggler {
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+    border-left: 0 !important;
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Lines of the Toggler */
+  .toggler-icon {
+    width: 30px;
+    height: 1px;
+    background-color: #ffffff;
+    display: block;
+    transition: all 0.2s;
+  }
+
+  /* Adds Space between the lines */
+  .middle-bar {
+    margin: 7px auto;
+  }
+
+  /* State when navbar is opened (START) */
+  .navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+
+  .navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+
+  .navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+  /* State when navbar is opened (END) */
+
+  /* State when navbar is collapsed (START) */
+  .navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+  }
+
+  .navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+
+  .navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+  }
+  /* State when navbar is collapsed (END) */
+
+  /* Color of Toggler when collapsed */
+  .navbar-toggler.collapsed .toggler-icon {
+    background-color: #ffffff;
+  }
+}
+
+/* ============ PLACEHOLDER LOGO MOBILE  ============ */
+
+@media (max-width: 991px) {
+  .placeholderContainer {
+    width: 170px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #placeholderLogo {
+    position: relative;
+    width: 165px;
+    height: 35px;
+  }
+}
+
+/* ============ MENU LINKS MOBILE   ============ */
+
+@media (max-width: 991px) {
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: #200d59;
+  }
+
+  .mobileActiveLink {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .mobileInlineArrow {
+    display: none;
+  }
+
+  .mobileInlineLink {
+    display: inline;
+    margin-left: 50px;
+  }
+
+  .mobileInlineLink:focus {
+    color: #38e5c4 !important;
+    margin-left: 0px;
+  }
+
+  .mobileInlineLink:focus img {
+    display: inline;
+    margin-right: 12px;
+  }
+
+  .mobile-divider,
+  .top-divider {
+    height: 1px;
+    border: 1px solid #e9eef2;
+    margin: 0px;
+  }
+
+  #searchBarMobile {
+    margin-top: 50px;
+  }
+  .search-divider {
+    height: 1px;
+    border: 1px solid #e9eef2;
+    margin: 20px 0px 0px 0px;
+  }
+
+  .searchhidemobile {
+    display: none;
+  }
+  .mobileSearchContainer {
+    padding: 0px;
+  }
+
+  .searchInputGroup {
+    align-items: baseline;
+  }
+
+  #searchBarInput {
+    padding: 0px !important;
+  }
+
+  .buttonListItem {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #requestDemo {
+    color: #38e5c4;
+    border: 1px solid #38e5c4;
+    border-radius: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 14px 95px 13px 95px;
+  }
+
+  #requestDemo:focus,
+  #requestDemo:after {
+    box-shadow: none;
+  }
+
+  .nav-item.collapse.show {
+    display: none;
+  }
+}
+
+/* ============ MEGA MENU INDUSTRIES MOBILE  ============ */
+
+@media (max-width: 991px) {
+  .megamenu {
+    border: 0px;
+  }
+
+  .megadroplist {
+    list-style: none;
+    padding-left: 0px;
+  }
+
+  .megadroplist img {
+    display: none;
+  }
+
+  .dropdown-divider {
+    border: 1px solid #e9eef2;
+  }
+
+  .dropitem {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: #200d59;
+    padding-left: 26px;
+  }
+}
+
+/* ============ MEGA MOBILE VIEW ============ */
+@media (max-width: 991px) {
+  .navbar.fixed-top .navbar-collapse,
+  .navbar.sticky-top .navbar-collapse {
+    overflow-y: auto;
+    max-height: 90vh;
+    margin-top: 10px;
+  }
+}
+/* ============ MOBILE VIEW END ============ */

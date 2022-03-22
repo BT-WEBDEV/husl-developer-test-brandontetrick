@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HUSL Digital Test - Brandon Tetrick</title>
+
+  <!-- BOOTSTRAP 5.1.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  
+  <!-- JQUERY 3.6.0 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+  <!-- STYLESHEET & SCRIPTS -->
+  <link rel="stylesheet" href="desktopstyles.css">
+  <link rel="stylesheet" href="mobilestyles.css">
+  <script src="scripts.js"></script>
+
+  <!-- GOOGLE FONTS: JOST (BEST FREE REPLACEMENT FOR FUTURAPT)-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-dark navbar-expand-lg mask container">
+    <div class="container navContainer"> 
+
+      <!-- PLACEHOLDER LOGO -->
+      <div class="container placeholderContainer">
+        <a class="navbar-brand" href="index.html">
+          <img id="placeholderLogo" src="/images/placeholder.png" alt="placeholder logo">
+        </a>
+      </div>
+      
+        <!-- SEARCH ICON MOBILE - SHOWS SEARCH INPUT/HIDES OTHER MENU ELEMENTS -->
+      <button class="navbar-toggler custom-toggler collapsed searchMobile" id="searchIcon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="/images/search.png" alt="searchicon" width="20px" heigh="20px">
+      </button>
+        
+
+        <!-- NAVBAR TOGGLER BUTTON  -->
+      <button class="navbar-toggler custom-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" id="toggleButton">
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
+      </button>
+
+
+      <!-- NAVBAR TOGGLER LINKS-->
+      <div class="collapse navbar-collapse keep-open" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll keep-open ulList" style="--bs-scroll-height: 1000px;">
+
+          <!-- INDUSTRIES TAB (DROPDOWN DESKTOP) -->
+          <li class="nav-item hoverLink mobileActiveLink dropdown has-megamenu hideOnSearch" id="industriesLi">
+            <a class="nav-link mobileInlineLink " id="IndustryLink" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="mobileInlineArrow" src="/images/right-arrow.png" alt="arrow">
+              <span id="IndustryText">Industries</span>
+            </a>
+
+              <!-- INDUSTRIES MEGA MENU -->
+                <div class="dropdown-menu megamenu" role="menu">
+                  <div class="container">
+                    <ul class="megadroplist">
+                      
+                      <div class="container hoverRow"> <!-- ROW FOR ARROW & LINK -->  
+                        <li>
+                          <hr class="dropdown-divider top-divider">
+                        </li>
+                        <li class="inlineDrop">
+                          <img src="/images/right-arrow.png" alt="arrow">
+                        </li> 
+                        <li class="inlineDrop">
+                          <a class="dropdown-item bg-transparent dropitem" href="index.html">Financial Services</a>
+                        </li>
+                      </div>
+
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+
+                      <div class="container hoverRow"> <!-- ROW FOR ARROW & LINK -->  
+                        <li class="inlineDrop">
+                          <img src="/images/right-arrow.png" alt="arrow">
+                        </li> 
+                        <li class="inlineDrop">
+                          <a class="dropdown-item bg-transparent dropitem" href="index.html">Healthcare</a>
+                        </li>
+                      </div>
+                      
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      
+                      <div class="container hoverRow"> <!-- ROW FOR ARROW & LINK -->  
+                        <li class="inlineDrop">
+                          <img src="/images/right-arrow.png" alt="arrow">
+                        </li> 
+                        <li class="inlineDrop">
+                          <a class="dropdown-item bg-transparent dropitem" href="index.html">Government</a>
+                        </li>
+                      </div> 
+
+                  </div> <!-- END MEGA CONTAINER -->
+                </div> <!-- END MEGA MENU -->
+
+            </li><!-- END INDUSTRIES DROPDOWN -->
+
+          <li>
+            <hr class="mobile-divider">
+          </li>
+
+          <!-- ADDITIONAL MENU ITEMS SOLUTIONS THRU COMPANY -->
+          <li class="nav-item hoverLink mobileActiveLink hideOnSearch hoverPadding">
+            <a class="nav-link mobileInlineLink mobileHide" id="SolutionsLink" href="#" role="button">
+              <img class="mobileInlineArrow" src="/images/right-arrow.png" alt="arrow">
+              Solutions</a>
+          </li>
+          <li>
+            <hr class="mobile-divider">
+          </li>
+        
+          <li class="nav-item hoverLink mobileActiveLink hideOnSearch hoverPadding">
+            <a class="nav-link mobileInlineLink mobileHide" id="EnterpriseLink" href="#">
+              <img class="mobileInlineArrow" src="/images/right-arrow.png" alt="arrow">
+              Enterprise Class&nbsp;AI</a>
+          </li>
+          <li>
+            <hr class="mobile-divider">
+          </li>
+          <li class="nav-item hoverLink mobileActiveLink hideOnSearch hoverPadding ">
+            <a class="nav-link mobileInlineLink mobileHide" id="KnowledgeLink" href="#">
+              <img class="mobileInlineArrow" src="/images/right-arrow.png" alt="arrow">
+              Knowledge Center</a>
+          </li>
+          <li>
+            <hr class="mobile-divider">
+          </li>
+          <li class="nav-item hoverLink mobileActiveLink hideOnSearch hoverPadding">
+            <a class="nav-link mobileInlineLink mobileHide" id="CompanyLink" href="#">
+              <img class="mobileInlineArrow" src="/images/right-arrow.png" alt="arrow">
+              Company</a>
+          </li>
+
+          <!-- SEARCH DESKTOP MENU LINK (WITH DROPDOWN) -->
+          <li class="nav-item hoverLink dropdown has-megamenu searchhidemobile" id="searchLi">
+            <a class="nav-link searchDesktop searchhidemobile mobileHide" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+               <img src="/images/search.png" alt="searchicon">
+            </a>
+
+            <!-- SEARCH MEGA MENU DROPDOWN -->
+            <div class="dropdown-menu megamenu megamenusearch" id="searchDrop" role="menu">
+              <div class="container searchContainer">
+                <ul class="megadroplist">
+                  <div class="container">  
+                    <div class="input-group input-group-lg">
+                      <input type="text" placeholder="Search" class="form-control bg-transparent searchbar" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                      <div class="input-group-append">
+                        <a href="#">
+                          <img src="/images/close.png" alt="close" height="18px" width="18px">
+                        </a> 
+                      </div>
+                    </div>
+                    <li>
+                      <hr class="dropdown-divider" style="margin: 0px;">
+                    </li>
+                  </div> <!-- END CONTAINER UNDER UL -->
+                </ul> <!-- END UL MEGADROP LIST-->
+              </div> <!-- END SEARCHCONTAINER -->
+            </div> <!-- END MEGA MENU -->
+          </li> <!-- END SEARCH MENU LI  -->
+
+          <!--  SEARCH MOBILE DROP DOWN -->
+          <li class="nav-item hoverLink" id="searchBarMobile">
+            <div class="container">  
+              <div class="input-group input-group-lg searchInputGroup">
+                <input type="text" placeholder="Search" id="searchBarInput" class="form-control bg-transparent searchbar" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                <div class="input-group-append">
+                  <a href="index.html" id="exitIcon">
+                    <img src="/images/close.png" alt="close" height="20px" width="20px">
+                  </a> 
+                  
+                </div>
+              </div>
+              <hr class="search-divider">
+          </li>
+
+          <!-- REQUEST A DEMO  -->
+          <li class="nav-item mobileActiveLink buttonListItem">
+            <button type="button" id="requestDemo" class="btn">REQUEST A&nbsp;DEMO</button>
+          </li>
+        
+        </ul> <!--END UL NAVBAR LIST-->
+      </div> <!-- END NAVBAR TOGGLER LINKS -->
+     </div> <!-- END navContainer -->
+  </nav> <!-- END NAVBAR -->
+</body>
+</html>
