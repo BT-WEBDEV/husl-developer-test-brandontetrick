@@ -249,7 +249,7 @@
     padding-left: 0px;
   }
 
-  #industryLink:focus {
+  #IndustryLink:focus {
     border: 0px !important;
     outline: none !important;
     box-shadow: none !important;
