@@ -163,7 +163,18 @@
     margin-left: 0px;
   }
 
-  .mobileInlineLink:focus img {
+  .nav-link:hover {
+    display: inline;
+    color: #38e5c4 !important;
+    margin-left: 0px !important;
+  }
+
+  .nav-link:focus img {
+    display: inline;
+    margin-right: 12px;
+  }
+
+  .nav-link:hover img {
     display: inline;
     margin-right: 12px;
   }
@@ -236,6 +247,12 @@
   .megadroplist {
     list-style: none;
     padding-left: 0px;
+  }
+
+  #industryLink:focus {
+    border: 0px !important;
+    outline: none !important;
+    box-shadow: none !important;
   }
 
   .megadroplist img {
