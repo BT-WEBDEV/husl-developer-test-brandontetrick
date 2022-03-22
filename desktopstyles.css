@@ -11,7 +11,7 @@ body {
     height: 100px;
     left: 0px;
     top: 0px;
-    background: url(/images/backgroundtexture.png),
+    background: url(https://raw.githubusercontent.com/BT-WEBDEV/husl-developer-test-brandontetrick/main/images/backgroundtexture.png),
       linear-gradient(134.46deg, #4279db 0%, #82afff 99.07%);
     background-blend-mode: multiply, normal;
     box-shadow: 0px 0px 40px rgba(15, 26, 79, 0.3);
